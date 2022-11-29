@@ -9,9 +9,9 @@ import tensorflow as tf
 
 import tensorflow_text
 
-from ..layer.EncoderLayer import EncoderLayer
-from ..embedding.PositionalEmbedding import PositionalEmbedding
-class Encoder(tf.keras.layers.Layer):
+from layer.EncoderLayer import EncoderLayer
+from embedding.PositionalEmbedding import PositionalEmbedding
+class encoder(tf.keras.layers.Layer):
   def __init__(self, *, num_layers, d_model, num_heads,
                dff, vocab_size, dropout_rate=0.1):
     super().__init__()

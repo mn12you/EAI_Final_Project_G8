@@ -10,7 +10,7 @@ import tensorflow as tf
 
 import tensorflow_text
 
-from BaseAttention import BaseAttention
+from layer.BaseAttention import BaseAttention
 
 class CausalSelfAttention(BaseAttention):
   def call(self, x):

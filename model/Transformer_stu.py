@@ -8,14 +8,14 @@ import tensorflow_datasets as tfds
 import tensorflow as tf
 
 import tensorflow_text
-from Encoder import Encoder
-from Decoder import Decoder
+from model.Encoder import encoder
+from model.Decoder import Decoder
 
 class Transformer(tf.keras.Model):
   def __init__(self, *, num_layers, d_model, num_heads, dff,
                input_vocab_size, target_vocab_size, dropout_rate=0.1):
     super().__init__()
-    self.encoder = Encoder(num_layers=num_layers, d_model=d_model,
+    self.encoder = encoder(num_layers=num_layers, d_model=d_model,
                            num_heads=num_heads, dff=dff,
                            vocab_size=input_vocab_size,
                            dropout_rate=dropout_rate)

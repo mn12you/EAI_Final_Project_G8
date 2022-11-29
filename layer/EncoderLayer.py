@@ -9,8 +9,8 @@ import tensorflow as tf
 
 import tensorflow_text
 
-from GlobalSelfAttention import GlobalSelfAttention
-from FeedForward import FeedForward
+from  layer.GlobalSelfAttention import GlobalSelfAttention
+from layer.FeedForward import FeedForward
 
 class EncoderLayer(tf.keras.layers.Layer):
   def __init__(self,*, d_model, num_heads, dff, dropout_rate=0.1):

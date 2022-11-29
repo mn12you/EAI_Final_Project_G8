@@ -9,8 +9,8 @@ import tensorflow_datasets as tfds
 import tensorflow as tf
 
 import tensorflow_text
-from ..layer.DecoderLayer import DecoderLayer
-from ..embedding.PositionalEmbedding import PositionalEmbedding
+from layer.DecoderLayer import DecoderLayer
+from embedding.PositionalEmbedding import PositionalEmbedding
 
 
 class Decoder(tf.keras.layers.Layer):

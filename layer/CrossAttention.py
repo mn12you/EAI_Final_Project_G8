@@ -9,7 +9,7 @@ import tensorflow as tf
 
 import tensorflow_text
 
-from BaseAttention import BaseAttention
+from layer.BaseAttention import BaseAttention
 
 class CrossAttention(BaseAttention):
   def call(self, x, context):

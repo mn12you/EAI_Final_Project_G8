@@ -10,9 +10,9 @@ import tensorflow as tf
 
 import tensorflow_text
 
-from CausalSelfAttention import CausalSelfAttention
-from CrossAttention import CrossAttention
-from FeedForward import FeedForward
+from layer.CausalSelfAttention import CausalSelfAttention
+from layer.CrossAttention import CrossAttention
+from layer.FeedForward import FeedForward
 
 
 class DecoderLayer(tf.keras.layers.Layer):
